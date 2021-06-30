@@ -1,0 +1,104 @@
+@import "sizes";
+@import "fonts";
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+ul{
+        list-style-type: none;
+    }
+
+.header
+    {
+        background-image:url(../media/perro-t.jpg);
+        height: max-content;
+        background-size: cover;
+        background-position:top;
+        
+    }
+
+#logo{ 
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+.jumbotron{
+        background-color: unset;
+        @include roboto-white;
+    }
+    
+h2{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: #212529;
+        @include roboto-white;
+        
+}
+
+.slider{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.promocion{
+    padding: 0px;
+    margin-bottom: 20px;
+    @include flex-center-center;
+    &-card{
+            width: 16rem;
+            @include phone{
+                width: 10rem;
+                margin-bottom: 5px;
+            }
+            @include tablet{
+                width: 13rem;
+                &-center{
+                    display: block ruby;
+                }
+            }
+            transition: transform 1s;
+            box-shadow: 2px 2px 3px #999;
+    }
+
+    &-card:hover{
+        transform: scale(1.1);}
+}
+
+.ubicacion{
+       
+    &-text{
+        @include flex-center-center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &-iframe{
+        padding-bottom: 20px;
+        @include flex-center-center;
+    }
+}
+
+.footer{
+    
+    h3{font-size: 30px;}
+    background-color:black;
+    @include dancing-white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    &-logo{
+        @include flex-column-center;
+        }
+    &-social{
+        @include flex-center-center;
+        @include phone{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+    &-pago{
+        @include flex-column-center;
+    }
+
+}

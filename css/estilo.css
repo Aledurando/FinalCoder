@@ -10,6 +10,11 @@ ul {
   height: max-content;
   background-size: cover;
   background-position: top; }
+  .header-nosotros {
+    height: max-content;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../media/gato-header.jpg); }
 
 #logo {
   text-align: center;

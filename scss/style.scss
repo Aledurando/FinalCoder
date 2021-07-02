@@ -8,14 +8,23 @@ ul{
         list-style-type: none;
     }
 
-.header
-    {
-        background-image:url(../media/perro-t.jpg);
+@mixin header-style{
         height: max-content;
         background-size: cover;
         background-position:top;
-        
     }
+
+.header
+    {
+        background-image:url(../media/perro-t.jpg);
+        @include header-style;
+        
+        &-nosotros{
+        @include header-style;
+        background-image: url(../media/gato-header.jpg);
+
+    }}
+
 
 #logo{ 
         text-align: center;

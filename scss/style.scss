@@ -8,6 +8,11 @@ ul{
         list-style-type: none;
     }
 
+
+body{
+    background-color: ghostwhite;
+}
+
 @mixin header-style{
         height: max-content;
         background-size: cover;
@@ -84,7 +89,13 @@ h2{
 
     &-iframe{
         padding-bottom: 20px;
+        padding-top: 40px;
         @include flex-center-center;
+    }
+
+    &-cont{
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
@@ -111,3 +122,31 @@ h2{
     }
 
 }
+
+
+.contenedor{
+    &-item{
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    &-boton{
+        @include flex-column-center;
+        a{
+            margin-top: 40px;
+            padding: 15px;
+        }
+    }
+
+    box-shadow: 10px 40px 40px #999;
+    
+}
+
+.formulario{
+    box-shadow:  5px 1px 5px #999;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+

@@ -16,8 +16,18 @@ body {
   .header-nosotros {
     height: max-content;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-image: url(../media/gato-header.jpg); }
+  .header-contacto {
+    height: max-content;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../media/perro-t3.png); }
+  .header-producto {
+    height: max-content;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../media/perro-t4.png); }
 
 #logo {
   text-align: center;
@@ -110,6 +120,15 @@ h2 {
   .contenedor-item {
     margin-top: 30px;
     margin-bottom: 30px; }
+    @media only screen and (max-width: 1080px) {
+      .contenedor-item:nth-of-type(3) {
+        order: 2; }
+      .contenedor-item:nth-of-type(4) {
+        order: 1; }
+      .contenedor-item:nth-of-type(7) {
+        order: 4; }
+      .contenedor-item:nth-of-type(8) {
+        order: 3; } }
   .contenedor-boton {
     display: flex;
     flex-direction: column;

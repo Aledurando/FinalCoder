@@ -8,3 +8,13 @@
     font-family: 'Dancing Script', cursive;
     color:white;
 }
+
+@mixin roboto-black{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+@mixin dancing-black{
+    font-family: 'Dancing Script', cursive;
+    color:black;
+}

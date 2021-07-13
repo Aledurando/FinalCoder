@@ -1,5 +1,6 @@
 @import "sizes";
 @import "fonts";
+@import "colors";
 *{
     margin: 0px;
     padding: 0px;
@@ -96,6 +97,7 @@ h2{
 }
 
 .ubicacion{
+    margin-bottom: 50px;
        
     &-text{
         @include flex-center-center;
@@ -117,7 +119,7 @@ h2{
 .footer{
     
     h3{font-size: 30px;}
-    background-color:black;
+    background-color:$colornav;
     @include dancing-white;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -174,4 +176,95 @@ h2{
     margin-bottom: 50px;
     padding-bottom: 30px;
 }
+
+.producto{
+    
+    &-card{
+            width: 16rem;
+            @include phone{
+                width: 10rem;
+                margin-bottom: 5px;
+            }
+            @include tablet{
+                width: 13rem;
+                }
+    }
+
+    &-back{
+        background-image: url(../media/back.png);
+        @include header-style-center;
+    }
+
+    &-titulo{
+        text-align: center;
+        @include roboto-white;
+        background-color: $colornav;
+             h1{
+                 margin-bottom: 10px;
+                 padding: 10px;
+      }
+    }
+
+    &-categoria{
+        @include flex-column-center;
+        padding-top: 50px;
+        @include roboto-white;
+        h4{
+            font-size: 30px;
+            text-shadow: $sombreado;
+        }
+        ul li a{
+             font-size: 20px;
+             color: white;
+             text-shadow: $sombreado;
+                
+        }
+    }
+
+    &-lineas{
+        background-color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+        h5{
+            font-size: 30px;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            @include roboto-black;
+            text-align: center;
+        }
+        
+        &-img{
+            @include flex-row-center;
+
+            li{
+                margin: 5px;
+                 }
+                        
+            @include max-desktop{
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+    }
+    
+
+
+
+}
+
+.slider-letter{
+    h5 {
+        text-shadow:$sombreado;
+        font-size:50px;
+    }
+    
+    p{
+        text-shadow: $sombreado;
+        font-size:30px;
+    }
+}
+
 

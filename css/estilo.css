@@ -73,25 +73,25 @@ h2 {
   .promocion-card:hover {
     transform: scale(1.1); }
 
-.ubicacion-text {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-family: 'Roboto', sans-serif; }
-
-.ubicacion-iframe {
-  padding-bottom: 20px;
-  padding-top: 40px;
-  display: flex;
-  text-align: center;
-  justify-content: center; }
-
-.ubicacion-cont {
-  margin-top: 50px;
+.ubicacion {
   margin-bottom: 50px; }
+  .ubicacion-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif; }
+  .ubicacion-iframe {
+    padding-bottom: 20px;
+    padding-top: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center; }
+  .ubicacion-cont {
+    margin-top: 50px;
+    margin-bottom: 50px; }
 
 .footer {
-  background-color: black;
+  background-color: #343a40;
   font-family: 'Dancing Script', cursive;
   color: white;
   padding-top: 50px;
@@ -142,3 +142,74 @@ h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   padding-bottom: 30px; }
+
+.producto-card {
+  width: 16rem; }
+  @media only screen and (min-width: 360px) {
+    .producto-card {
+      width: 10rem;
+      margin-bottom: 5px; } }
+  @media only screen and (min-width: 768px) {
+    .producto-card {
+      width: 13rem; } }
+
+.producto-back {
+  background-image: url(../media/back.png);
+  height: max-content;
+  background-size: cover;
+  background-position: center; }
+
+.producto-titulo {
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background-color: #343a40; }
+  .producto-titulo h1 {
+    margin-bottom: 10px;
+    padding: 10px; }
+
+.producto-categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  color: white;
+  font-family: 'Roboto', sans-serif; }
+  .producto-categoria h4 {
+    font-size: 30px;
+    text-shadow: black 0.1em 0.1em 0.2em; }
+  .producto-categoria ul li a {
+    font-size: 20px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em; }
+
+.producto-lineas {
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .producto-lineas h5 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: center; }
+  .producto-lineas-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .producto-lineas-img li {
+      margin: 5px; }
+    @media only screen and (max-width: 1080px) {
+      .producto-lineas-img {
+        flex-direction: column;
+        text-align: center; } }
+
+.slider-letter h5 {
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 50px; }
+
+.slider-letter p {
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 30px; }

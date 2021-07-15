@@ -43,7 +43,7 @@ h2 {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
-  background-color: #212529;
+  background-color: #343a40;
   color: white;
   font-family: 'Roboto', sans-serif; }
 
@@ -208,8 +208,8 @@ h2 {
 
 .slider-letter h5 {
   text-shadow: black 0.1em 0.1em 0.2em;
-  font-size: 50px; }
+  font-size: 30px; }
 
 .slider-letter p {
   text-shadow: black 0.1em 0.1em 0.2em;
-  font-size: 30px; }
+  font-size: 20px; }

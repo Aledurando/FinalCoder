@@ -48,4 +48,9 @@ $desktop: 1080px;
     { @content;}
   }
 
+  @mixin min-desktop{
+    @media only screen and (min-width: $phone)
+    {@content;}
+  }
+
 
